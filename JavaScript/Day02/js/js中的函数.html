@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js中的函数</title>
+		<script type="text/javascript">
+			/*
+			 * js中函数(非常重要)
+			 * js中的函数就相当于java中方法,定义函数使用关键function
+			 * 1.普通函数
+			 * 		定义格式:
+			 * 			function 函数名(参数列表){
+			 * 				函数体;
+			 * 				return 返回值;
+			 * 			}
+			 * 			a.函数的参数列表不能写数据类型,否则报错
+			 * 				(var a,var b) 错误   (a,b)
+			 * 			b.函数是没有返回值类型,函数中写return就有返回值,不写return就没有返回值
+			 * 			c.函数中写一个return关键字,没有返回值,作用结束函数
+			 * 		使用格式:
+			 * 			有返回值的函数
+			 * 				var 变量 = 函数名(参数);
+			 * 			没有返回值的函数
+			 * 				函数名(参数);
+			 */
+			//定义一个计算两个整数和的函数
+			function sum(a,b){
+				return a+b;
+			}
+			var s=sum(10,15);
+			//alert(s);
+			//定义一个计算两个整数和的匿名函数
+			var add=function(a,b){
+				return a+b;
+			}
+			alert(add(10,20));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

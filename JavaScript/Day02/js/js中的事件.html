@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js中的事件</title>
+		<script type="text/javascript">
+			//定义一个按钮点击事件的响应函数
+			function ButtonClick(){
+				alert("铠甲合体");
+			}
+			//定义一个文本框获取焦点事件的响应函数
+			function textClick(){
+				alert("铠甲变身");
+			}
+			//定义一个图片鼠标移入事件的响应函数
+			function imgOver(){
+				alert("铠甲阵亡")
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="铠甲开关" onclick="ButtonClick()" />
+		<input type="text" placeholder="请点击" onfocus="textClick()" />
+		<!--
+			图片的鼠标移入事件
+			1.事件源: 图片 img
+			2.事件:	onmouseover 鼠标移入事件
+			3.把事件源和事件绑定到一起: 在img标签上添加一个onmouseover属性
+			4.事件触发后的响应行为: 定义一个函数来处理这个事件
+		-->
+		<img src="../img/帝皇.jpg"  height="300px" width="200px" onmouseover="imgOver()"/>
+	</body>
+</html>

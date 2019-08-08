@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>form表单标签的属性</title>
+	</head>
+	<body>
+		<form  action="#" method="get">
+			用户名:<input type="text" name="username" value="lisi" />
+			用户名:<input type="text" name="username" placeholder="请输入用户名" />
+			用户名:<input type="text" name="username" value="lisi"  readonly="readonly"/>
+			用户名:<input type="text" name="username" value="lisi"  disabled="disabled"/>
+			<br />
+			密码:<input type="password" name="password" value="1111"/>
+			<br />
+			请选择您的性别:
+				男<input type="checkbox" name="sex" checked="checked" value="男" />
+				女<input type="checkbox" name="sex"  value="女" />
+				<br />
+			请选择您的爱好:
+				抽烟:<input type="checkbox" name="hobbies" value="抽烟"/>
+				喝酒:<input type="checkbox" name="hobbies" value="喝酒"/>
+				烫头:<input type="checkbox" name="hobbies" value="烫头"/>
+				<br />
+				<select name="se">
+					<option value="dc">貂蝉</option>
+					<option value="xs">西施</option>
+					<option value="yyh">杨玉环</option>
+				</select>
+				<br />
+				<select name="se" multiple="multiple" size="2">
+					<option value="dc">貂蝉</option>
+					<option value="xs">西施</option>
+					<option value="yyh">杨玉环</option>
+				</select>
+				<br />
+				<input type="submit" />
+		</form>
+	</body>
+</html>

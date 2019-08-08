@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>location对象</title>
+		<script type="text/javascript">
+			//定义按钮点击事件的响应函数
+			function buton(){
+				location.href="http://www.baidu.com";
+			}
+			//图片点击事件的响应函数
+			function imgon(){
+				location.href="http://h5.itcast.cn/special/2019fbh";
+			}
+		</script>
+	</head>
+	<body>
+		<!--按钮点击事件-->
+		<input type="button" value="点击我到百度" onclick="buton()" />
+		<!--图片点击事件-->
+		<img src="../img/传智.jpg" onclick="imgon()"/>
+	</body>
+</html>

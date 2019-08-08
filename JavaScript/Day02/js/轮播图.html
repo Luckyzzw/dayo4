@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播图</title>
+		<script type="text/javascript">
+			//创建一个页面加载事件.让页面先加载完毕,在切换图片
+			window.onload=function(){
+				//定一个变量记录图片的编号
+				var imgId=1;
+				//创建一个反复执行的定时器,2秒执行一次
+				setInterval(function(){
+					//在定时器中对图片的编号进行判断
+					if(imgId<7){
+						imgId++;
+					}else{
+						imgId=1;
+					}
+					var lbtEle=document.getElementById("lbt")
+					lbtEle.src="../img/"+imgId+".jpg";
+				},2000);
+			}
+		</script>
+	</head>
+	<body>
+		<div style="mar gin: 50px auto;width: 100px; height: 50px;"></div>
+		<img src="../img/1.jpg" id="lbt"/>
+	</body>
+</html>

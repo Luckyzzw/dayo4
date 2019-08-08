@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面案列</title>
+		<style type="text/css">
+			/*给body添加背景图片*/
+			body{
+				background-image: url(img/bg.jpg);
+			}
+			#whiteDiv{
+				/*设置背景色*/
+				background-color: white;
+				/*设置边框*/
+				border: black solid 1px;
+				/*设置尺寸*/
+				width: 600px;
+				height: 500px;
+				/*设置外边距*/
+				margin: 50px auto;
+				/*设置内边距*/
+				padding:50px 0px 0px 100px 
+			}
+			/*设置表单注册div的样式*/
+			.regDiv{
+				/*设置尺寸*/
+				width:400px ;
+				height:300px;
+				border: 0px solid red;
+			}
+			/*设置h3标题标签的样式*/
+			h3{
+				color: blue;
+				font-size: 20px;
+			}
+			span{
+				color: black;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--创建一个背景色为白色的div,设置边框,高度,宽度,外边距,内边距-->
+		<div id="whiteDiv">
+			<!--创建一个表单注册div,设置高度,宽度-->
+			<div class="regDiv">
+				<h3>会员注册&nbsp;&nbsp;&nbsp;<span>USER REGISTER</span></h3>
+				<form action="#" method="get">
+					<table>
+						<tr>
+							<td>用户名</td>
+							<td>
+								<input type="text" placeholder="请输入用户名" name="username"/>
+							</td>
+						</tr>
+						<tr>
+							<td>密码</td>
+							<td>
+								<input type="password" placeholder="请输入密码" name="password"/>
+							</td>
+						</tr>
+						<tr>
+							<td>性别</td>
+							<td>
+								男<input type="radio" name="sex" checked="checked"/>
+								女<input type="radio" name="sex" />
+							</td>
+						</tr>
+						<tr>
+							<td>验证码</td>
+							<td>
+								<input type="text" name="checkCode" />
+							</td>
+							<td>
+								<img src="img/checkcode.jpg" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+							     <input type="submit" value="注册" style="background-color: red;"/>
+							</td>
+						</tr>
+						
+					</table>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

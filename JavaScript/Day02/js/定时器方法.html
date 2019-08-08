@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>定时器方法</title>
+		<script type="text/javascript">
+			//执行一次定时器
+			//定义一个函数
+			function c4(){
+				alert("c4爆炸了");
+			}
+			setTimeout(c4,3000);
+			//使用匿名函数
+			var timeld = setTimeout(function(){
+				alert("c4爆炸了");
+			},3000);
+			alert(timeld);
+			//定义一个鼠标点击事件的响应函数
+			function butOnClick(){
+				clearInterval(timeId);
+			}
+			//反复执行的定时器
+			//每间隔3秒执行一次匿名函数
+			var interId=setInterval(function(){
+			alert("嘿嘿,被炸了")
+			},3000);
+			//定义一个鼠标点击事件的响应函数
+			function clearMM(){
+				clearInterval(interId);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="拆除c4" onclick="butOnClick()" />
+		<input type="button" value="清除病毒" onclick="clearMM()" />
+	</body>
+</html>

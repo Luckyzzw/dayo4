@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>RegExp(正则表达式)</title>
+		<script type="text/javascript">
+			//创建一个检验手机号的正则表达式
+			var reg=/^1[34578][0-9]{9}$/;
+//			var b=reg.test("13311561065");//true
+//			    b=reg.test("12345678");//false
+//			    b = reg.test("138001380a0");//false
+//				b = reg.test("11800138000");//false
+				b = reg.test("95800138000");//false
+				alert(b);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
